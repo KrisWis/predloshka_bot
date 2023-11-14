@@ -23,7 +23,7 @@ logging.basicConfig(  # Чтобы бот работал успешно, соз�
     handlers=[logging.handlers.RotatingFileHandler("Logs/     TGBot.log", maxBytes=10485760, backupCount=0), logging.StreamHandler()])
 
 # Инициализация бота и диспетчера
-bot = Bot('5366109022:AAH_PzE6TcAUse11roxNQvgPmLgbFKLm2Us')
+bot = Bot('')
 dp = Dispatcher(bot, storage=MemoryStorage())
 logging.basicConfig(level=logging.INFO)
 dp.middleware.setup(LoggingMiddleware())
